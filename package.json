@@ -1,0 +1,58 @@
+{
+  "name": "ghost-mailtrap-email-adapter",
+  "version": "0.0.0",
+  "description": "Mailtrap bulk email provider adapter for Ghost newsletters",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "EmailProviderBase.js",
+    "MailtrapEmailProvider.js",
+    "patches",
+    "docs",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "author": "Wakqas Ahmed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wakqasahmed/ghost-mailtrap-email-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wakqasahmed/ghost-mailtrap-email-adapter/issues"
+  },
+  "homepage": "https://github.com/wakqasahmed/ghost-mailtrap-email-adapter#readme",
+  "keywords": [
+    "ghost",
+    "ghost-cms",
+    "email",
+    "adapter",
+    "mailtrap",
+    "newsletter",
+    "bulk-email"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "release": "changeset publish",
+    "test": "mocha --recursive test --exclude 'test/integration/**'",
+    "test:integration": "bash test/integration/ghost-6.sh"
+  },
+  "dependencies": {
+    "@tryghost/debug": "^0.1.33",
+    "@tryghost/errors": "^3.3.6"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.1",
+    "eslint": "^10.7.0",
+    "mocha": "^11.7.5",
+    "should": "^13.2.3",
+    "sinon": "^21.0.0"
+  },
+  "contributors": [
+    "Daniel Raffel (@danielraffel) <https://github.com/danielraffel>"
+  ]
+}
